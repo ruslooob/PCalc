@@ -10,27 +10,34 @@
 
     /* css Grid */
     body {
-        background-color: #b5fd8d;
+        padding: 0;
+        margin: 0;
+       background: linear-gradient(45deg, #F17C58, #E94584, #24AADB, #27DBB1, #FFDC18, #FF3706);
         /*не позволяет пользователю выделять элементы */
         user-select: none;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
     }
 
     .container {
         /* ?? */
+        margin: 30% 30%;
+
         display: grid;
         /* ?? */
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-gap: 4px;
-        background-color: #212121;
+        background-color: #c0c0c0;
         padding: 4px;
-        border-radius: 5px;
+        border-radius: 15px;
         max-width: 360px;
         font-family: "Tahoma";
     }
 
     .item {
-        background-color: #b3e5fc;
-        color: black;
+        background-color: #130f40;
+        color: white;
         padding: 20px;
         display: flex;
         justify-content: center;
@@ -38,6 +45,7 @@
         font-size: 22px;
         cursor: pointer;
         font-weight: bold;
+        border-radius: 15px;
     }
 
     form {
@@ -51,6 +59,7 @@
         font-size: 30px;
         outline: none;
         text-align: right;
+        border-radius: 15px;
     }
 
     .input {
@@ -70,7 +79,7 @@
     .equal {
         grid-column: 4;
         grid-row: 6/8;
-        background-color: #bdbdbd;
+        background-color: #e056fd;
     }
 
     .zero {
