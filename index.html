@@ -132,8 +132,13 @@
 
         function equal() {
             let exp = document.form.textview.value;
-            if (exp){
-                document.form.textview.value = eval(exp);
+            if (exp) {
+                let answer = eval(exp);
+                if (answer){
+                    document.form.textview.value = answer;
+                } else {
+                    alert("Введено неправильное выражение! Исправьте его!");
+                }
             }
         }
 
